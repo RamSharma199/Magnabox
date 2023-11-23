@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+input[type="time"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+@layer components {
+  .btn-submit {
+    @apply w-full p-3 bg-[#3A4B86] hover:bg-[#4f64b1] rounded-md mt-32 text-[#ffffff] font-bold;
+  }
+  .company-name{
+    @apply text-[18px] text-center sm:text-[25px] font-extrabold text-[#000000]
+    
+  }
+  .base-btn{
+   @apply  border-[#858585] font-bold border-2 px-5 py-1 sm:py-2 rounded-md hover:bg-[#ffffff] text-[#DF3737]
+  }
+  .focus{
+    @apply w-full bg-[#ffffff] relative mt-2 rounded-md border-2 focus:outline-none focus-within:ring-2 focus-within:ring-blue-500
+  }
+}
