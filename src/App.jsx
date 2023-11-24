@@ -1,4 +1,5 @@
 import { MagnaboxForm } from "./Pages/MagnaboxForm"
+import React from 'react';
 import { BaseInput } from "./component/BaseInput"
 
 function App() {
